@@ -234,36 +234,32 @@ header{
     font-size: 15px;
 }
 
-
+.social-icon img{
+    width: 65px;
+    height:65px;
+    gap: 1rem;
+}
 
 .social-icon{
-    width: 45px;
-    height: 45px;
+
     background: white;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+   
     position: absolute;
 }
 
-.linkedin-icon {
-    left: 30px;    
-}
+
 
 .ig-icon {
-    left: calc( 50% - 25px);
+    left: calc( 50% - 10px);
     
  
     
 }
 
-.twitter-icon {
-    right: 30px;
-  
- 
-    
-}
 
 .profile-image{
     height: 35px;
