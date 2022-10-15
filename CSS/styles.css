@@ -97,8 +97,7 @@ nav{
 .menu{
     width: 100px;
     height: 100px;
-    backdrop-filter:saturate(100%) blur(50px) ;
-  
+    backdrop-filter:saturate(100%) blur(50px);
     border-radius: 50%;
     position: fixed;
     left: calc(85% - 2em);
@@ -177,96 +176,39 @@ border-radius: 50%;
 header{
     z-index: 3;
     background-color: rgba(24,32,111, 0.6);
-    margin-bottom: 100px;
-    min-height: 600px;
-}
-
-
-
-
-.section-header{
     display: flex;
     justify-content: center;
+    align-items: center;
     color: white;
-    z-index: 4;
+    min-height: 100vh;
+   
 }
 
-.border-1, 
-.border-2, 
-.border-3{
-  
-    padding: 2rem 1.5rem;
-    border-radius: 25%;
-    display: inline-block;
+ul{
+    list-style: none;
 }
+
+
+ 
+
 
 .border-3 > img{
-    width: 90px;
+    width: 150px;
     border-radius: 50%;
     object-fit: cover;
   
 }
 
-.border-1{
-    padding: 6rem 2rem 3rem 2rem;
-}
 
-.header-presentacion{
-    position: absolute;
-    min-width: 100%;
-    left: 0;
-   
-    text-align: center;
-    background-color: rgba(24,32,111, 0.02);
-}
-
-.header-presentacion>h1{
-    font-size: 1.5rem;
-    font-weight: bold;
-
-}
-
-.header-presentacion>h1>span{
-    color: var(--accent-color);
-}
-
-.header-presentacion>p{
-    font-size: 15px;
-}
 
 .social-icon img{
     width: 65px;
     height:65px;
-    gap: 1rem;
-}
-
-.social-icon{
-
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: white; 
     border-radius: 50%;
    
-    position: absolute;
 }
 
-
-
-.ig-icon {
-    left: calc( 50% - 10px);
-    
- 
-    
-}
-
-
-.profile-image{
-    height: 35px;
-    width: 35px;
-    justify-content: center;
-    object-fit: contain;
-   }
 
 .colaboracion{
     background-color: #f9f5f2;
