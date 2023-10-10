@@ -65,7 +65,7 @@ section {
 
 /* NAV BAR*/
 nav {
-  position: absolute;
+  position: relative;
   inset: 0px 0px 0px 0px;
   width: 38px;
   z-index: 999;
@@ -73,7 +73,7 @@ nav {
 
 nav .navbar {
   z-index: 999999999999;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   bottom: 0;
