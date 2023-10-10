@@ -568,16 +568,18 @@ a .resume-coin {
 @media screen and (max-width: 800px) {
   nav {
     position: fixed;
-    top: 90%;
+  
     left: 0;
     width: 100%;
     display: flex;
     list-style: none;
     z-index: 10;
     height: 25px;
+    top: 92%;
   }
 
   nav .navbar {
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -587,7 +589,7 @@ a .resume-coin {
     width: 100%;
     padding: 2px;
     gap: 25px;
-    top: 65%;
+    
   }
 
   .navbar {
