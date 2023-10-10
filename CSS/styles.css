@@ -65,15 +65,14 @@ section {
 
 /* NAV BAR*/
 nav {
-  position: relative;
+  position: absolute;
   inset: 0px 0px 0px 0px;
   width: 38px;
   z-index: 999;
 }
 
 nav .navbar {
-  z-index: 999999999999;
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -568,7 +567,7 @@ a .resume-coin {
 
 @media screen and (max-width: 800px) {
   nav {
-    position: absolute;
+    position: fixed;
     top: 90%;
     left: 0;
     width: 100%;
