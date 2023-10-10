@@ -65,7 +65,7 @@ section {
 
 /* NAV BAR*/
 nav {
-  position: fixed;
+  position: absolute;
   inset: 0px 0px 0px 0px;
   width: 38px;
   z-index: 999;
@@ -557,13 +557,17 @@ a .resume-coin {
   }
 }
 
+@media (height >= 806px) {
 
-
-
+  .border-1{
+    bottom: 33% !important;
+  }
+  
+}
 
 @media screen and (max-width: 800px) {
   nav {
-    position: fixed;
+    position: absolute;
     top: 90%;
     left: 0;
     width: 100%;
@@ -628,7 +632,7 @@ a .resume-coin {
     position: absolute;
     left: 0%;
     right: 0%;
-    bottom: 40%;
+    bottom: 20%;
     top: 0%;
     margin: auto;
   }
