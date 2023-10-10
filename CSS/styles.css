@@ -579,7 +579,7 @@ a .resume-coin {
   }
 
   nav .navbar {
-    position: absolute;
+    position:sticky;
     display: flex;
     flex-direction: row;
     justify-content: center;
