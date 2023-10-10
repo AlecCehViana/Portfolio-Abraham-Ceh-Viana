@@ -42,7 +42,7 @@ html {
 
 
 .glass {
-  background: yellow;
+
   min-height: 80vh;
   width: 100%;
 
@@ -83,7 +83,7 @@ nav .navbar {
   align-items: center;
   justify-content: center;
   padding: 0px 0px;
-  background-color: var(--principal-color);
+  background-color: rgba(24, 32, 111, 2);
   backdrop-filter: saturate(20%) blur(16px);
   list-style: none;
 }
@@ -116,7 +116,7 @@ header {
   background-color: rgba(24, 32, 111, 0.4);
   text-align: left;
   padding-left: 108px;
-  padding-top: 80px;
+  padding-top: 50px;
   justify-content: center;
   align-items: center;
   color: white;
@@ -142,6 +142,7 @@ header div {
 
 .text-2 {
   margin-bottom: 55px;
+ 
   animation: sub 4s 1;
 }
 
@@ -181,7 +182,6 @@ header div {
   height: 30px;
   width: 30px;
   display: flex;
-  position: fixed;
   left: 60%;
   right: 0;
   bottom: 60%;
@@ -241,11 +241,12 @@ header div {
   z-index: 1000;
 }
 
+
 .border-2 > img {
   width: 210px;
   height: 210px;
   border-radius: 50%;
-  object-fit: fill;
+  object-fit:contain;
 }
 
 .social-icon img {
@@ -266,17 +267,13 @@ h2 {
   color: #fff;
 }
 
-h5 {
-
-  color: black;
-}
-h6, h3{
+h5, h3{
   color: #fff;
 }
 h3{
   padding: 1rem;
 }
-small, h4{
+small, h4, h6{
   color: black;
 }
 
@@ -349,20 +346,17 @@ section > .section-about {
 ul {
   list-style: none;
   margin-top: 1rem;
+  padding: 0;
 }
 .skill, .education-card {
   height: 400px;
   width: 350px;
-  padding: 1rem;
   align-items: center;
   justify-content: center;
-  text-align: start;
+  text-align: center;
   display: flex;
   flex-direction: column;
   list-style: none;
-  padding: 1.5rem 1rem;
-  text-align: center;
-  gap: 1rem;
   background-color: var(--light-color);
   border-radius: 1rem;
 }
@@ -370,59 +364,57 @@ ul {
 .skills-container {
   justify-content: center;
   align-items: center;
+  text-align: center;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.section-experiencia {
-  padding: 1rem;
-  overflow-x: auto;
-  gap: 1rem;
-}
-
-.scroll-horizontal {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-grow: inherit;
-  max-width: 100vw;
-  margin-left: 100px;
-  padding: 80px 0px;
-  padding-bottom: 10px;
-  overflow-x: auto;
 
 
-}
 
 
-.sliding-card {
-  width: 550px;
-  min-width: 550px;
-  height: 300px;
-  padding: 2rem 1rem;
+
+.carousel-item {
+  padding-top: 40px;
+  position: relative;
+  width: 100%;
+  min-width: 100%;
+  height: 400px;
   text-align: center;
-  gap: 0.5rem;
-  background-color: var(--light-color);
+  background-color: rgba(81, 80, 160, 0.57);
   border-radius: 1rem;
  
 }
 
-.sliding-card > img {
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
+
+
+.carousel-item > img {
+
+  width: 200px;
+  height: 200px;
+  object-position: center;
+  align-items: center;
+  object-fit:contain;
   margin: 0 auto;
 }
 
 
 
 .contact {
+
   display: flex;
   justify-content: center;
   gap: 1rem;
   align-items: center;
+  
+}
+section > .contact{
+margin-top: -80px !important ;
+}
+
+a{
+  text-decoration: none;
 }
 
 .contact-card {
@@ -460,6 +452,65 @@ footer {
   color: white;
   min-height: 100vh;
 }
+.nav-item{
+  background-color: white;
+  border-radius: 10px;
+}
+
+form{
+  
+  width: 300px;
+  font-size: 16px;
+}
+form h3 {
+  text-align: center;
+}
+
+.input-group{
+  margin-bottom: 30px ;
+  position: relative;
+}
+ input,  textarea{
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid var(--light-color);
+  background: transparent;
+  color: var(--light-color);
+  box-sizing: border-box;
+  resize: vertical;
+  border-radius: 10px;
+}
+label{
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  cursor: text;
+  transition: 0.2s ;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+  top: -35px;
+  font-size: 14px;
+}
+
+
+form button{
+  background: var(--principal-color) ;
+  color: var(--light-color);
+  padding: 10px 15px;
+  margin-top: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+form button:hover{
+  background: var(--accent-color);
+}
 
 .btn-download {
   background: rgba(255, 255, 255, 0.29);
@@ -485,14 +536,16 @@ footer {
   background-color: rgb(248, 238, 147, 0.4) ;
 }
 
-a > img {
+a .resume-coin {
 
- 
-  display: block;
+
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   position: absolute;
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
+  padding: 100px;
 }
 
 @keyframes resume {
@@ -506,27 +559,6 @@ a > img {
 
 
 
-::-webkit-scrollbar{
-  width : .5em !important;
-  height: .5em;
-  
-}
-::-webkit-scrollbar-track{
-  background: rgba(255, 255, 255, 0.65);
-  border-radius: 100vw;
-  margin-block: 0.5em;
-  margin-right: 12px;
-}
-
-::-webkit-scrollbar-thumb{
-  background: rgba(24, 32, 111, 0.5); 
-  border: 0.25 solid  rgba(24, 32, 111);
-  border-radius: 100vw;
-}
-
-::-webkit-scrollbar-thumb:hover{
-  background:  rgba(24, 32, 111, 0.7);
-}
 
 
 @media screen and (max-width: 800px) {
@@ -634,13 +666,13 @@ a > img {
   }
 
   .text-1 {
-    font-size: 30px;
+    font-size: 22px;
     margin-bottom: 5px;
   }
 
   .text-2 {
     margin-bottom: 19px;
-    font-size: 22px;
+    font-size: 17px;
   }
 
   .text-center {
@@ -650,6 +682,13 @@ a > img {
     margin-bottom: 11rem;
     text-align: center;
   }
+
+  .contact {
+
+    display: flex;
+    flex-direction: column;
+  }
+
   .contact-card {
     display: flex;
     flex-direction: column;
@@ -661,40 +700,8 @@ a > img {
     text-align: center;
   }
 
-  .scroll-horizontal {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    scroll-behavior: smooth;
-  }
 
-  .sliding-card {
-    width: 350px;
-    min-width: 350px;
-    height: 700px;
-    max-height: 300px;
-    padding: 1.5rem 1rem;
-    text-align: center;
-    gap: 1rem;
-    background-color: var(--light-color);
-    border-radius: 1rem;
-  }
 
-  .scroll-horizontal {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    justify-content: space-between;
-    max-width: 100vw;
-    overflow-x: auto;
-    margin-left: 5px;
-  }
-  ::-webkit-scrollbar-track{
-    background: rgba(255, 255, 255, 0.65);
-    border-radius: 100vw;
-    margin-block: 0.5em;
-    margin-right: 5px;
-  }
 }
 
 @media screen and (min-width: 860px) {
@@ -702,7 +709,8 @@ a > img {
     padding: 1rem 5rem;
   }
 
-  .contacto {
+  .contact {
+  
     justify-content: space-evenly;
   }
 }

@@ -5,8 +5,12 @@ canvas.width = window.innerWidth;
 canvas.height= window.innerHeight;
 
 
+
 const sound1 = new Audio();
 sound1.src=`/assets/sounds/8bit Click Sound Effect.mp3`;
+
+
+
 
 
 
@@ -102,3 +106,5 @@ window.addEventListener("resize", function(){
     canvas.height= window.innerHeight;
     effect.resize(canvas.width, canvas.height);
 })
+
+
