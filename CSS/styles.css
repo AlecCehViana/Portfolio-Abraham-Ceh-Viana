@@ -62,7 +62,7 @@ html {
 }
 
 section {
-  min-height: 80vh;
+  min-height: 100vh;
 }
 
 /* NAV BAR*/
@@ -90,6 +90,7 @@ body .navbar {
   background-color: rgba(24, 32, 111, 2);
   backdrop-filter: saturate(20%) blur(16px);
   list-style: none;
+  overflow: hidden;
 }
 
 .navbar a {
@@ -301,10 +302,14 @@ section > .section-about {
 }
 
 .section-about {
-  font-size: 22px;
+  font-size: 18px;
 }
 .section-about h2 {
   margin-left: 0;
+}
+
+.about-text{
+  padding-right: 20%;
 }
 
 
@@ -564,11 +569,15 @@ a .resume-coin {
 
   .border-1{
     bottom: 33% !important;
+   
   }
   
 }
 
 @media screen and (max-width: 800px) {
+
+
+
   nav {
     position: fixed;
   
@@ -714,6 +723,7 @@ a .resume-coin {
 }
 
 @media screen and (min-width: 860px) {
+
   .section {
     padding: 1rem 5rem;
   }
