@@ -60,7 +60,7 @@ html {
 }
 
 section {
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 /* NAV BAR*/
@@ -127,7 +127,6 @@ header {
 }
 
 header div {
-
   font-size: 28px;
   width: 75%;
 }
