@@ -17,7 +17,7 @@ body {
   font-weight: 400;
   align-items: center;
   justify-content: center;
-  position: fixed;
+ 
  
 }
 
@@ -39,7 +39,7 @@ main {
 
 html {
   scroll-behavior: smooth;
-  position: fixed;
+
 }
 
 
@@ -66,15 +66,15 @@ section {
 }
 
 /* NAV BAR*/
-nav {
+ nav {
  
-  position: absolute;
+  position: static;
   inset: 0px 0px 0px 0px;
   width: 38px;
   z-index: 999;
 }
 
-nav .navbar {
+body .navbar {
   z-index: 9999999;
   position: fixed;
   top: 0;
