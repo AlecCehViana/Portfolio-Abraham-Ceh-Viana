@@ -17,6 +17,7 @@ body {
   font-weight: 400;
   align-items: center;
   justify-content: center;
+  position: fixed;
  
 }
 
@@ -38,6 +39,7 @@ main {
 
 html {
   scroll-behavior: smooth;
+  position: fixed;
 }
 
 
