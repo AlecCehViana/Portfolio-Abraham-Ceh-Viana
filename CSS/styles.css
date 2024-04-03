@@ -65,13 +65,15 @@ section {
 
 /* NAV BAR*/
 nav {
-  position: absolute;
+ 
+  position: fixed;
   inset: 0px 0px 0px 0px;
   width: 38px;
   z-index: 999;
 }
 
 nav .navbar {
+  z-index: 9999999;
   position: fixed;
   top: 0;
   left: 0;
