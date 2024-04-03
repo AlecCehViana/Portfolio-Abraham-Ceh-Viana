@@ -99,7 +99,6 @@ function animate(timestamp){
 }
 
 animate(0);
-
 window.addEventListener("resize", function(e){
     e.preventDefault()
 
