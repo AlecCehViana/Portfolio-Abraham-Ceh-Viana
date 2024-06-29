@@ -76,11 +76,11 @@ section {
 
  .navbar {
   z-index: 9999999;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
-  height: 100%;
+
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -90,7 +90,7 @@ section {
   background-color: rgba(24, 32, 111, 2);
   backdrop-filter: saturate(20%) blur(16px);
   list-style: none;
-  overflow: hidden;
+
 }
 
 .navbar a {
