@@ -37,10 +37,7 @@ main {
   min-width: 100%;
 }
 
-html {
-  scroll-behavior: smooth;
 
-}
 
 
 .glass {
@@ -56,7 +53,7 @@ html {
 
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+
   
   
 }
@@ -71,7 +68,7 @@ section {
   position:absolute;
   inset: 0px 0px 0px 0px;
   width: 38px;
-  z-index: 999;
+  z-index: 9999999999;
 }
 
  .navbar {
