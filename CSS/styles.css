@@ -68,13 +68,13 @@ section {
 /* NAV BAR*/
  nav {
  
-  position: static;
+  position:absolute;
   inset: 0px 0px 0px 0px;
   width: 38px;
   z-index: 999;
 }
 
-body .navbar {
+ .navbar {
   z-index: 9999999;
   position: fixed;
   top: 0;
