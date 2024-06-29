@@ -29,7 +29,7 @@ left: 0;
 }
 
 main {
-  min-height: 100vh;
+  
   backdrop-filter: saturate(2%) blur(2.5px);
   display: flex;
   align-items: center;
@@ -59,7 +59,7 @@ main {
 }
 
 section {
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 /* NAV BAR*/
