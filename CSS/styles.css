@@ -576,7 +576,7 @@ a .resume-coin {
 
 
   nav {
-    position: fixed;
+    position: absolute;
   
     left: 0;
     width: 100%;
